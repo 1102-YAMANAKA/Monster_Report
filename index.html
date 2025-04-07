@@ -8,10 +8,11 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        overflow: hidden; /* ← スクロールバー自体を非表示 */
       }
       iframe {
-        width: 90vw;
-        height: 90vh;
+        width: 100vw;
+        height: calc(100vh - 4px); /* ← 少しだけ小さくしてスクロール回避 */
         border: none;
         display: block;
       }
